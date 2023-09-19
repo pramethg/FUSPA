@@ -30,7 +30,8 @@ title("Figure 5b")
 figure(2);clf,set(gcf,'Position',[652 393 941 585]);
 velColormap = cat(1,flip(flip(hot(128),1),2),hot(128)); % custom velocity colormap
 velColormap = velColormap(5:end-5,:);
-
+llx = size(MatOut,2);
+llz = size(MatOut,1);
 im=imagesc(llx,llz,(MatOut).^(1/4).*sign(imgaussfilt(MatOut_zdir,0.8)));
 im.CData = im.CData - sign(im.CData)/2;axis image
 title('ULM intensity display with axial flow direction (Figure 5c)')

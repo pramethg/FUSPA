@@ -14,7 +14,7 @@ load("Fig2Data.mat")    % Loading of data
 % Code Plotting for Bregma -5.5:
 
 figure;   % Creating a plot
-imagesc(interpn(squeeze(vol_B_55) - max(max(squeeze(vol_B_55)))));   % Plotting the data 
+imagesc(mask_fUS.*(interpn(squeeze(vol_B_55) - max(max(squeeze(vol_B_55))))));   % Plotting the data 
 axis image   % Creating axis for the plot
 colormap(gray)   % Setting colormap for the plot
 caxis([-60 0])   % Setting limits for colormap
@@ -23,7 +23,7 @@ title('Figure 2b Bregma -5.5')   % Creating a title
 % Code Plotting for Bregma -4.0:
 
 figure;
-imagesc(interpn(squeeze(vol_B_4) - max(max(squeeze(vol_B_4)))));
+imagesc(mask_fUS.*(interpn(squeeze(vol_B_4) - max(max(squeeze(vol_B_4))))));
 axis image
 colormap(gray)
 caxis([-60 0])
@@ -32,7 +32,7 @@ title('Figure 2b Bregma -4.0')
 % Code Plotting for Bregma -2.7:
 
 figure;
-imagesc(interpn(squeeze(vol_B_27) - max(max(squeeze(vol_B_27)))));
+imagesc(mask_fUS.*(interpn(squeeze(vol_B_27) - max(max(squeeze(vol_B_27))))));
 axis image
 colormap(gray)
 caxis([-60 0])
@@ -71,29 +71,29 @@ title('Figure 2c Bregma -2.7')
 % Code Plotting for Bregma -5.5:
 
 figure;
-imagesc(interpn(mask.*vol_sO2_B_55));
+imagesc(interpn(mask_sO2.*vol_sO2_B_55));
 axis image
 colormap(redblue)
 caxis([0 1])
-title('Figure 2c Bregma -5.5')
+title('Figure 2d Bregma -5.5')
 
 % Code Plotting for Bregma -4.0:
 
 figure;
-imagesc(interpn(mask.*vol_sO2_B_4));
+imagesc(interpn(mask_sO2.*vol_sO2_B_4));
 axis image
 colormap(redblue)
 caxis([0 1])
-title('Figure 2c Bregma -4.0')
+title('Figure 2d Bregma -4.0')
 
 % Code Plotting for Bregma -2.7:
 
 figure;
-imagesc(interpn(mask.*vol_sO2_B_27));
+imagesc(interpn(mask_sO2.*vol_sO2_B_27));
 axis image
 colormap(redblue)
 caxis([0 1])
-title('Figure 2c Bregma -2.7')
+title('Figure 2d Bregma -2.7')
 
 %% Fig. 2e-g - 3D fUS, US velocimetry, and SO2 maps were created by ImageJ VolumeViewer
 % The data for volumetric view creation can be found in XXX.mat as variable

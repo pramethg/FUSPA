@@ -6,8 +6,8 @@ clear all
 load("Fig3data.mat")     % Loading of data
 
 %% Fig. 3a - ULM microbubble intensity map
-llx = size(MatOut,2);
-llz = size(MatOut,1);
+llx = 0:0.1:0.1*size(MatOut,2);
+llz = 0:0.1:0.1*size(MatOut,1);
 % MatOut intensity rendering, with compression factor
 figure(1);clf,set(gcf,'Position',[652 393 941 585]);
 IntPower = 1/3;SigmaGauss=0.2;

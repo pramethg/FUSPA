@@ -1,4 +1,4 @@
-# Data for the article "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
+# Title of Dataset: Data for the article "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
 
 * Summary Metrics
 
@@ -11,10 +11,10 @@ Rights reserved for Biophotonics And Ultrasound Imaging Laboratory, The Pennsylv
 * File count: 10
 
 
-* Total file size: 154 MB
+* Total file size: 143 MB
 
 
-* Range of individual file sizes: 1 KB - 136MB
+* Range of individual file sizes: 1 KB - 127MB
 
 
 * File formats: .mat and .m
@@ -29,7 +29,7 @@ Rights reserved for Biophotonics And Ultrasound Imaging Laboratory, The Pennsylv
     * ```Fig1Data.mat```, ```Fig2Data.mat```, ```Fig3data.mat```, ```Fig4Data1.mat```, ```Fig4Data2.mat```,```Fig4Data3.mat```, ```Fig5Data.mat```
 
 * Figure Generating Scripts
-    * ```Fig1.m```,  ```Fig2.m```, ```Fig3.m```, ```Fig4.m```, ```Fig5.m```
+    * ```Fig1.m```, ```Fig2.m```, ```Fig3.m```, ```Fig4.m```, ```Fig5.m```
 
 * How to use the code 
 
@@ -37,7 +37,7 @@ Rights reserved for Biophotonics And Ultrasound Imaging Laboratory, The Pennsylv
 
 ### System Requirements and Installation Information
 
-* All code is written in MATLAB 2022b
+* All code is written in MATLAB 2022b. 
 
 * The required add-ons for Matlab are listed below: 
 ├── Imaging Processing Toolbox
@@ -86,12 +86,13 @@ Fig1Data.mat
 
 * Format(s): .mat
 
-* Size(s): 1,351 KB
+* Size(s): 1,353 KB
 
 * Variables:
 ```
 Fig2Data.mat
-├── mask
+├── mask_sO2
+├── mask_fUS
 ├── vol_sO2_B_55
 ├── vol_sO2_B_4
 ├── vol_sO2_B_27
@@ -102,7 +103,9 @@ Fig2Data.mat
 ├── vol_B_4
 ├── vol_B_27
 ```
-    * mask: A double matrix with size 91x121 filtering the part of image showing in Figure. 2d
+    * mask_sO2: A double matrix with size 91x121 filtering part of unmixed sO2 map of Figure. 2d
+
+    * mask_fUS: A double matrix with size 389x491 filtering part of fUS map of Figure. 2b
 
     * vol_B_55: A double matrix with size 11x215x325 containing the data to generate fUS image at Bregma -5.5 with of Fig. 2b 
 
@@ -152,7 +155,7 @@ Fig3Data.mat
     * ULM: structure file that contains parameters in ULM analysis reconstruction
 
 #### ```Fig4Data.mat```
-* Description: Data for Figure 4b-4h8 that demonstrated the example graphs of  unmixed sO2 map, the relative change map of fUS, The quantitative vertical velocity map, the ROIs of the above figures, fUS image, differential vertical speed changes and the averaged fUS changes as well as the averaged SO2 changes in the given ROI.
+* Description: Data for Figure 4b-4h8 that demonstrated the example graphs of unmixed sO2 map, the relative change map of fUS, The quantitative vertical velocity map, the ROIs of the above figures, fUS image, differential vertical speed changes and the averaged fUS changes as well as the averaged SO2 changes in the given ROI.
 
 * Format(s): .mat
 
@@ -184,7 +187,7 @@ Fig4Data.mat
 
     * Vz_all_e: A double matrix with size 195x223 containing data for plotting the quantitative vertical velocity map generated from ultrasound field speckle decorrelation of Figure 4e
 
-    * Vz_all_new: A double matrix with size 195x223x147 containing data for plotting  the temporal changes of the vertical flow velocity map for the corresponding ROI in Fig. 4g6 and Fig. 4h6
+    * Vz_all_new: A double matrix with size 195x223x147 containing data for plotting the temporal changes of the vertical flow velocity map for the corresponding ROI in Fig. 4g6 and Fig. 4h6
 
     * Vz_artery_all_new: A double matrix with size 195x223x147 containing artery related data for plotting vessels with ascending and descending flow in Fig. 4g3 & Fig. 4h3 and differential vertical speed changes between arteries and veins in Fig. 4g8 & Fig. 4h8
 
@@ -314,10 +317,10 @@ Input: Fig5Data.mat
 Output: 8 plots for Figure 5a - 5j
 
 ### How to use the code
-* Open the .m file using matlab and click run under the "Editor" tab above. All figures will be generated automatically. The code might take a few seconds to minutes. Please wait patiently until the code is done (dispalying only this ```>> ``` sign at the end of command window of matlab).
+* Open the .m file using matlab and click run under the "Editor" tab. All figures will be generated automatically. The code might take a few seconds to minutes. Please wait patiently until the code is done (dispalying only this ```>> ``` sign at the end of command window of matlab).
 
 * Please refer to System Requirements and Installation Information part to make sure all required add-ons are installed on the matlab before running the code
 
-* To install add-ons, click "Apps" tab above and click "Get More Apps". A window of "Add-on Explorer" will show up. Then, searching for any add-ons needed using that window for the code.
+* To install add-ons, click "Apps" tab and click "Get More Apps". A window of "Add-on Explorer" will show up. Then, search for any add-ons needed using that window for the code.
 
 ##### Notice: Please place the code and data files in the **SAME** folder to run the code

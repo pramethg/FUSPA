@@ -10,7 +10,7 @@ close all
 % Papp E.A., Leergaard T.B., Calabrese E., Johnson G.A., Bjaalie J.G. (2014). Waxholm Space atlas of the Sprague Dawley rat brain. NeuroImage 97, 374-386. http://doi.org/10.1016/j.neuroimage.2014.04.001
 
 %% ULM related - Fig. 4b, Fig. 4g1, Fig. 4h1
-load("Fig4data3.mat"); 
+load("Fig4Data.mat"); 
 % Fig. 4b
 % MatOut intensity rendering, with vertical direction color encoding
 % Encodes the intensity with the Matout, but negative if the average velocity of the track is downward.
@@ -18,6 +18,8 @@ figure;clf,set(gcf,'Position',[652 393 941 585]);
 velColormap = cat(1,flip(flip(hot(128),1),2),hot(128)); % custom velocity colormap
 velColormap = velColormap(5:end-5,:);
 IntPower = 1/4;
+llx = size(MatOut,2);
+llz = size(MatOut,1);
 im=imagesc(llx,llz,(MatOut).^IntPower.*sign(imgaussfilt(MatOut_zdir,0.8)));
 im.CData = im.CData - sign(im.CData)/2;axis image
 title('ULM intensity display with vertical flow direction (Figure 4b)')
@@ -55,12 +57,11 @@ caxis([-1 1]*max(caxis)*.7) % add saturation in image
 clbar = colorbar;clbar.Label.String = 'Count intensity';
 ca = gca;ca.Position = [.05 .05 .8 .9];
 
-%% fUS - related figures - Fig. 4c, 4g4, 4h4
-data = load("Fig4Data1.mat");    % Loading of data
+%% fUS - related figures - Fig. 4c, 4f, 4g4, 4h4
 
 % Defining variables for change map Figure 4f:
-fUS = data.movie_frame;
-fUS_change = data.movie_frame_change;
+fUS = fUS_frame;
+fUS_change = fUS_frame_change;
    
 % Code plotting for Figure 4c - fUS:
 figure;    % Creating a plot
@@ -73,7 +74,7 @@ title("Figure 4c")   % Creating a title for the plot
 
 % Code plotting for Figure 4f - change map:
 figure;
-imagesc(fUS_change(6:185,15:200,80));
+imagesc(fUS_change_f);
 axis image
 colormap(jet)
 colorbar
@@ -110,17 +111,14 @@ end
 
 
 %% PA related, Fig. 4d, Fig. 4g5, Fig. 4h5
-clear
 
-data = load("Fig4Data2.mat");   % Loading of data
 
 % Defining variables for unmixed SO2 map of Figure 4e3, Figure 4f3 and Figure 4g3:
-PA = data.movie_frame;
-PA_change = data.movie_frame_sO2_delta;
+PA = PA_frame;
 
 % Creating an unmixed SO2 map Fig. 4d: 
 figure;
-imagesc(PA(:,:,80));
+imagesc(PA_d);
 axis image
 colormap(redblue)
 colorbar
@@ -158,9 +156,7 @@ end
 
 
 %% Ultrafast Ultrasound based Velocimetry Fig. 4e, Fig. 4g2, Fig. 4g3, Fig. 4g6, Fig. 4h2, Fig. 4h3, Fig. 4h6
-clear all
 
-load("Fig4data3.mat")
 % Code for plotting Figure 4e
 figure;
 imagesc(Vz_all_e);
@@ -240,15 +236,11 @@ for i = 1:6
 end
 title("Figure 4h6")
 
-%% ROI CBV and SO2 curve plotting Fig. 4g7, Fig.4g8, Fig. 4h7, Fig. 4h8
-
-% Loading of data: 
-fUS_ROI = load('Fig4Data1.mat');
-SO2_ROI = load('Fig4Data2.mat');
+%% ROI CBV and SO2 curve plotting Fig. 4g7, Fig. 4g8, Fig. 4h7, Fig. 4h8
 
 % Defining variables for analyzing fUS change and SO2 change: 
-fUS_ROI = fUS_ROI.avg_PDI_change_ROI;
-SO2_ROI = SO2_ROI.ROI_sO2;
+fUS_ROI = avg_PDI_change_ROI;
+SO2_ROI = ROI_sO2;
 
 % Code plotting for Figure 4g7 :
 figure;
