@@ -1,4 +1,4 @@
-# Data for the article titled "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
+# Data for the article "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
 
 * Summary Metrics
 
