@@ -1,4 +1,4 @@
-# Data for the article "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
+# Title of Dataset: Data for the article "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
 
 * Summary Metrics
 
@@ -201,7 +201,7 @@ Fig4Data.mat
 
     * PA_frame: A double matrix with size 80x137x147 containing data for plotting the unmixed sO2 map at the given ROI in Fig. g5 & Fig. h5
 
-    * ROI_sO2: A double matrix with size 147x3 containing data for plotting the averaged fUS changes as well as the averaged SO2 changes of the ROI in Fig. 4g7 & Fig. 4h7
+    * ROI_sO2: A double matrix with size 147x3 containing data for plotting the averaged SO2 changes as well as the averaged SO2 changes of the ROI in Fig. 4g7 & Fig. 4h7
 
     * fUS_change_f: A double matrix with size 180x186 containing data for plotting the relative change map of the fUS intensity during hypercapnia for Fig. 4f
 
