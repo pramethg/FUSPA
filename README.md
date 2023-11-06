@@ -219,28 +219,22 @@ Fig4Data.mat
 Fig5Data.mat
 ├── avg_cortex_data
 ├── avg_filter_detrend
-├── avg_filter_detrend_diff
 ├── avg_filter_detrend_ventr_data
 ├── Fig5adata
 ├── Fig5b_data
 ├── Fig5e_data
-├── Fig5h_data
 ├── filter_detrend_cortex_data
 ├── Fs
 ├── lag_array
 ├── MatOut
 ├── MatOut_zdirs
 ├── r_filter_detrend
-├── r_filter_detrend_diff
 ├── std_filter_detrend
-├── std_filter_detrend_diff
 ├── ULM
 ```
     * avg_cortex_data : A double matrix with size 1x300 containig averaged cortex data for plotting the example time series of the averaged cortical dynamics and averaged venous dynamics in Fig. 5d
 
     * avg_filter_detrend: A double matrix with size 1x13 containing averaed filtered detrended data for plotting the cross correlation between cortex and venous signal in Fig. 5f
-
-    * avg_filter_detrend_diff: A double matrix with size 1x13 containing averaed filtered detrended differentiated data for plotting the cross correlation between negative derivative of cortex and venous signal in Fig. 5i
 
     * avg_filter_detrend_ventr_data: A double matrix with size 1x300 containig averaged filtered detrended brain ventricle data for plotting the example time series of the averaged cortical dynamics and averaged venous dynamics in Fig. 5d
 
@@ -249,8 +243,6 @@ Fig5Data.mat
     * Fig5b_data: A double matrix with size 188x129 containing data for plotting the fUS change map during hypercapnia stimulation in Fig. 5b
 
     * Fig5e_data: A double matrix with size 188x129 containing data for plotting the cross correlation between the averaged cortical fUS temporal dynamics and the temporal dynamics of each voxel in the image in Fig. 5e
-
-    * Fig5h_data: A double matrix with size 188x129 containing data for plotting the cross correlation between the negative derivative of the cortical signals to each voxel in Fig. 5h
 
     * filter_detrend_cortex_data: A double matrix with size 1x300 containig filtered detrended brain cortex data for plotting the example time series of the averaged cortical dynamics and averaged venous dynamics in Fig. 5d
 
@@ -264,12 +256,8 @@ Fig5Data.mat
 
     * r_filter_detrend: A double matrix with size 201x140x13 containing filtered detrended data for plotting the enlarged cross- correlation map in the given ROI at different lags in Fig. 5g
 
-    * r_filter_detrend_diff: A double matrix with size 201x140x13 containing filtered detrended differentiated data for plotting the enlarged cross- correlation map in the given ROI at different lags in Fig. 5j
-
     * std_filter_detrend: A double matrix with size 1x13 containing standard diviation of filtered detrended data for calculating the error bar in Fig. 5f
-
-    * std_filter_detrend_diff: A double matrix with size 1x13 containing standard diviation of filtered detrended differentiated data for calculating the error bar in Fig. 5i
-
+    
     * ULM: structure file that contains parameters in ULM analysis reconstruction
 
 

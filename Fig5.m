@@ -49,36 +49,21 @@ legend('Cortex', 'Ventricle')
 title('BPFed Cortex vs. Ventricle (Figure 5d)')
 axis tight
 
-%% Fig. 5f and Fig. 5i
+%% Fig. 5f
 % Code plotting for Figure 5f 'Cortex vs. Selected' (subplot on the top):
 figure;
-sgtitle('BPFed Cross Correlation (Figure 5f and Figure 5i)')     % Creating a title for all subplots
+sgtitle('BPFed Cross Correlation (Figure 5f)')     % Creating a title for all subplots
 subplot(2,1,1)                         % Creating 2 subplots         
 errorbar(lag_array/Fs, avg_filter_detrend, std_filter_detrend,'Color',"black",'LineWidth',2)    % Creating the errorbar of the plot
 
-% Code plotting for Figure 5i '-d/dt(Cortex) vs. Selected'(subplot at the bottom):
-subplot(2,1,2)
-errorbar(lag_array/Fs, avg_filter_detrend_diff, std_filter_detrend_diff,'Color',"black",'LineWidth',2)
 
-
-%% Fig. 5g ,Fig. 5e, Fig 5h and Fig. 5j
+%% Fig. 5g ,Fig. 5e, Fig 5h
 % Code plotting for Figure 5g (from left to right, up to down):
 figure;
 sgtitle("Figure 5g")
 for i = 1:7
     subplot(3,3,i)
     imagesc(r_filter_detrend(13:43,60:91,2*i-1))
-    colormap(purplered)
-    axis image
-    caxis([-0.2 0.2])
-end
-
-% Code plotting for Figure 5j (from left to right, up to down):
-figure;
-sgtitle("Figure 5j")
-for i = 1:7
-    subplot(3,3,i)
-    imagesc(r_filter_detrend_diff(13:43,60:91,2*i-1))
     colormap(purplered)
     axis image
     caxis([-0.2 0.2])
@@ -92,14 +77,6 @@ colormap(purplered)
 axis image
 caxis([-0.2 0.2])
 title('Lag = 1.42 second cortex vs all (Figure 5e)')
-
-% Code plotting for Figure 5h
-figure;
-imagesc(Fig5h_data)
-colormap(purplered)
-axis image
-caxis([-0.2 0.2])
-title('Lag = 0 second diff(cortex) vs all (Figure 5h)')
 
 %% Purple red colormap definition
 function cmap = purplered
