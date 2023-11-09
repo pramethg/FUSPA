@@ -1,4 +1,4 @@
-# Title of Dataset: Data for the article "Multiparametric Functional Brain Hemodynamic Imaging using A Single System Combining Ultrafast Ultrasound and Multispectral Photoacoustic"
+# Title of Dataset: Data for the article "Dissecting Multiparametric Cerebral Hemodynamics using Integrated Ultrafast Ultrasound and Multispectral Photoacoustic Imaging"
 
 * Summary Metrics
 
