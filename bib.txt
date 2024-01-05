@@ -1,0 +1,12 @@
+@article {Chen2023.11.07.566048,
+	author = {Haoyang Chen and Shubham Mirg and Prameth Gaddale and Sumit Agrawal and Menghan Li and Van Nguyen and Tianbao Xu and Qiong Li and Jinyun Liu and Wenyu Tu and Xiao Liu and Patrick J. Drew and Nanyin Zhang and Bruce J. Gluckman and Sri-Rajasekhar Kothapalli},
+	title = {Dissecting Multiparametric Cerebral Hemodynamics using Integrated Ultrafast Ultrasound and Multispectral Photoacoustic Imaging},
+	elocation-id = {2023.11.07.566048},
+	year = {2023},
+	doi = {10.1101/2023.11.07.566048},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Understanding brain-wide hemodynamic responses to different stimuli at high spatiotemporal resolutions can help study neuro-disorders and brain functions. However, the existing brain imaging technologies have limited resolution, sensitivity, imaging depth and provide information about only one or two hemodynamic parameters. To address this, we propose a multimodal functional ultrasound and photoacoustic (fUSPA) imaging platform, which integrates ultrafast ultrasound and multispectral photoacoustic imaging methods in a compact head-mountable device, to quantitatively map cerebral blood volume (CBV), cerebral blood flow (CBF), oxygen saturation (SO2) dynamics as well as contrast agent enhanced brain imaging with high spatiotemporal resolutions. After systematic characterization, the fUSPA system was applied to quantitatively study the changes in brain hemodynamics and vascular reactivity at single vessel resolution in response to hypercapnia stimulation. Our results show an overall increase in brain-wide CBV, CBF, and SO2, but regional differences in singular cortical veins and arteries and a reproducible anti-correlation pattern between venous and cortical hemodynamics, demonstrating the capabilities of the fUSPA system for providing multiparametric cerebrovascular information at high-resolution and sensitivity, that can bring insights into the complex mechanisms of neurodiseases.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2023/11/11/2023.11.07.566048},
+	eprint = {https://www.biorxiv.org/content/early/2023/11/11/2023.11.07.566048.full.pdf},
+	journal = {bioRxiv}
+}
