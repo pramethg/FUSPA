@@ -1,9 +1,16 @@
-# Title of Dataset: Data for the article "Dissecting Multiparametric Cerebral Hemodynamics using Integrated Ultrafast Ultrasound and Multispectral Photoacoustic Imaging"
+# Data for the Article: "Multiparametric Brain Hemodynamics Imaging Using a Combined Ultrafast Ultrasound and Photoacoustic System"
+
+## Updates:
+ - The article has been published in the **Advanced Science** journal.
+ - [DOI Link](https://doi.org/10.1002/advs.202401467)
+```
+H. Chen, S. Mirg, P. Gaddale, S. Agrawal, M. Li, V. Nguyen, T. Xu, Q. Li, J. Liu, W. Tu, X. Liu, P. J. Drew, N. Zhang, B. J. Gluckman, S.-R. Kothapalli, Multiparametric Brain Hemodynamics Imaging Using a Combined Ultrafast Ultrasound and Photoacoustic System. Adv. Sci. 2024, 2401467. https://doi.org/10.1002/advs.202401467
+```
 
 * Summary Metrics
 
-### Chen et al., 2023
-Code to generate analyses and figures in *Chen et al., 2023*
+### Chen et al., 2024
+Code to generate analyses and figures in *Chen et al., 2024*
 Rights reserved for Biophotonics And Ultrasound Imaging Laboratory, The Pennsylvania State University. 
 
 ---------------
